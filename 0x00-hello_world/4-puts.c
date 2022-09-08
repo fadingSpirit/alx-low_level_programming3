@@ -2,13 +2,13 @@
 
 /**
  *
- *  * main - Entry point
+ * main -print the string in the put function
  *
- *   *
+ * Description: using the main function
+ * this program prints "Programming is like building a bilingual puzzle"
+ * Return: Always 0 (Success)
  *
- *    * Return: Always 0 (Success)
- *
- *     */
+ */
 
 int main(void)
 
