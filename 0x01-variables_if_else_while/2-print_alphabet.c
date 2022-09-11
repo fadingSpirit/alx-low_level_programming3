@@ -1,37 +1,19 @@
-nclude <stdio.h>
-
-
+#include <stdio.h>
 
 /**
+ * main - Entry point
  *
- *  * main - Entry point
- *
- *   *
- *
- *    * Return:0
- *
- *     */
-
-
+ * Return:0
+ */
 
 int main(void)
-
 {
+	int alpha;
 
-		int alpha;
-
-
-
-			for (alpha = 'a'; alpha <= 'z'; alpha++)
-
-					{
-
-								putchar(alpha);
-
-									}
-
-				putchar('\n');
-
-					return (0);
-
+	for (alpha = 'a'; alpha <= 'z'; alpha++)
+	{
+		putchar(alpha);
+	}
+	putchar('\n');
+	return (0);
 }
