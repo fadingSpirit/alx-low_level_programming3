@@ -1,37 +1,19 @@
 #include <stdio.h>
 
-
-
 /**
+ * main - Entry point
  *
- *  * main - Entry point
- *
- *   *
- *
- *    * Return: 0
- *
- *     */
-
-
+ * Return: 0
+ */
 
 int main(void)
-
 {
+	int i;
 
-		int i;
-
-
-
-			for (i = 'z'; i >= 'a'; i--)
-
-					{
-
-								putchar(i);
-
-									}
-
-				putchar('\n');
-
-					return (0);
-
+	for (i = 'z'; i >= 'a'; i--)
+	{
+		putchar(i);
+	}
+	putchar('\n');
+	return (0);
 }
