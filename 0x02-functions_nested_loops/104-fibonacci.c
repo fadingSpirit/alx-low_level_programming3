@@ -5,6 +5,7 @@
  *
  * Return: Always 0.
  */
+
 int main(void)
 {
 	int c, boolean, boolean2;
@@ -45,6 +46,6 @@ int main(void)
 		if (((n1 + n2) < 0) && boolean == 1)
 			boolean = 0;
 	}
-	printf("\n");
+	printf("\r\n");
 	return (0);
 }
