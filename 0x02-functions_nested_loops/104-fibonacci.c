@@ -22,6 +22,7 @@ int _fibonacci(int i)
 	}
 	return (l);
 }
+
 /**
  * main - prints the fibonacci
  * Return: 0
