@@ -1,50 +1,61 @@
 #include <stdio.h>
 
 /**
- * main - Prints the first 98 Fibonacci numbers
- *
- * Return: Always 0.
+ * _fibonacci - prints the length of string
+ * @i: integer value
+ * Return: 0
  */
+
+int _fibonacci(int i)
+{
+	int l = 0;
+
+	if (!i)
+	{
+		return (1);
+	}
+
+	while (i)
+	{
+		i /= 10;
+		l += 1;
+	}
+	return (l);
+}
+/**
+ * main - prints the fibonacci
+ * Return: 0
+ */
+
 int main(void)
 {
-	int c, boolean, boolean2;
-	long int n1, n2, fn, fn2, n11, n22;
+	unsigned long f1 = 1, f2 = 2, tmp, mx = 100000000, f1o = 0, f2o = 0, tmpo = 0;
+	short int n = 1, in;
 
-	n1 = 1;
-	n2 = 2;
-	boolean =  boolean2 = 1;
-	printf("%ld, %ld", n1, n2);
-	for (c = 0; c < 96; c++)
+	while (n <= 98)
 	{
-		if (boolean)
+		if (f1o > 0)
+			printf("%lu", f1o);
+		in = _fibonacci(mx) - 1 - _fibonacci(f1);
+		while (f1o > 0 && in > 0)
 		{
-			fn = n1 + n2;
-			printf(", %ld", fn);
-			n1 = n2;
-			n2 = fn;
+			printf("%d", 0);
+			in--;
 		}
+		printf("%lu", f1);
+
+		tmp = (f1 + f2) % mx;
+		tmpo = f1o + f2o + (f1 + f2) / mx;
+		f1 = f2;
+		f1o = f2o;
+		f2 = tmp;
+		f2o = tmpo;
+
+		if (n != 98)
+			printf(", ");
 		else
-		{
-			if (boolean2)
-			{
-				n11 = n1 % 1000000000;
-				n22 = n2 % 1000000000;
-				n1 = n1 / 1000000000;
-				n2 = n2 / 1000000000;
-				boolean2 = 0;
-			}
-			fn2 = (n11 + n22);
-			fn = n1 + n2 + (fn2 / 1000000000);
-			printf(", %ld", fn);
-			printf("%ld", fn2 % 1000000000);
-			n1 = n2;
-			n11 = n22;
-			n2 = fn;
-			n22 = (fn2 % 1000000000);
-		}
-		if (((n1 + n2) < 0) && boolean == 1)
-			boolean = 0;
+			printf("\r\n");
+		n++;
 	}
-	printf("\r\n");
 	return (0);
 }
