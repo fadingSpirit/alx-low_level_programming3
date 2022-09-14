@@ -15,16 +15,17 @@ void jack_bauer(void)
 	while (hours_tens < '3')
 	{
 		if (hours_tens == '2')
-<<<<<<< HEAD
-
-=======
->>>>>>> c2eaa5d711c27b834ddbddb741c4ed72dd74815c
 		{
 			hours_max = '4';
 		}
 		hours_ones = '0';
+<<<<<<< HEAD
 		while (hours_ones < hours_max
 				{
+=======
+		while (hours_ones < hours_max)
+		{
+>>>>>>> cb327348567c6bbf60d3324721f85ad52502040b
 			minutes_tens = '0';
 			while (minutes_tens < '6')
 			{
