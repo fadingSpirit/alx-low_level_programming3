@@ -11,7 +11,7 @@ int main(void)
 
 	printf("Infinite loop incoming :(\r\n));
 
-	i 0;
+	i = 0;
 	/**
 	 * while (1 < 10)
 	 * {
@@ -20,5 +20,5 @@ int main(void)
 	 */
 	printf("Infinite loop avoided !\\o / \n");
 
-	retunr (0);
+	return (0);
 }
