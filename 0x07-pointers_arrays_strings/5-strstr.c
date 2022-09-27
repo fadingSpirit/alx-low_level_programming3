@@ -1,19 +1,32 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * _strstr - locates a substring
+ * @haystack: searched string
+ * @needle: located string
+ * Return: haystack or null depends
  */
 
-int main(void)
+char *_strstr(char *haystack, char *needle)
 {
-	char *s = "wworld of this";
-	char *f = "world";
-	char *t;
+	int i;
 
-	t = _strstr(s, f);
-	printf("%s\n", t);
-	return (0);
+	if (*needle == 0)
+		return (haystack);
+	while (*haystack)
+	{
+		i = 0;
+
+		if (haystack[i] == needle[i])
+		{
+			do {
+				if (needle[i + 1] == '\0')
+					return (haystack);
+
+				i++;
+			} while (haystack[i] == needle[i]);
+		}
+		haystack++;
+	}
+	return ('\0');
 }
