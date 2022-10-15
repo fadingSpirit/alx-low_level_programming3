@@ -1,2 +1,1 @@
-# alx-low_level_programming
-All about the low level programming language C
+This is a README that contains Variadic funcrions
